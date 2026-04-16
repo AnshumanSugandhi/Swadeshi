@@ -21,7 +21,7 @@ const MOCK_ARTISANS = {
       'https://picsum.photos/seed/pottery4/600/600'
     ]
   },
-  'default': {
+  '2': {
     name: 'Lakshmi Devi',
     craft: 'Kanjivaram Silk Weaver',
     location: 'Kanchipuram, Tamil Nadu',
@@ -30,13 +30,59 @@ const MOCK_ARTISANS = {
     experience: '20 Years',
     profileImg: 'https://picsum.photos/seed/lakshmi/400/400',
     coverImg: 'https://picsum.photos/seed/silk_loom/1200/500',
-    bio: 'Specializing in pure mulberry silk and authentic zari work. Our looms have been spinning magic for decades, capturing the essence of South Indian heritage in every thread.',
+    bio: 'Specializing in pure mulberry silk and authentic zari work. Our looms have been spinning magic for decades, capturing the essence of South Indian heritage in every thread. Join me to understand the rhythm of the handloom.',
     gallery: [
       'https://picsum.photos/seed/silk1/600/600',
       'https://picsum.photos/seed/silk2/600/400',
       'https://picsum.photos/seed/silk3/400/600',
       'https://picsum.photos/seed/silk4/600/600'
     ]
+  },
+  '3': {
+    name: 'Abdul Rahman',
+    craft: 'Wood Carving Artisan',
+    location: 'Saharanpur, Uttar Pradesh',
+    rating: 4.7,
+    reviews: 56,
+    experience: '25 Years',
+    profileImg: 'https://picsum.photos/seed/abdul/400/400',
+    coverImg: 'https://picsum.photos/seed/woodwork/1200/500',
+    bio: 'Saharanpur is the city of wooden magic, and my family has been carving teak and rosewood here for generations. From intricate floral motifs to grand architectural pieces, I will teach you how to make the wood speak.',
+    gallery: [
+      'https://picsum.photos/seed/wood1/600/600',
+      'https://picsum.photos/seed/wood2/600/400',
+      'https://picsum.photos/seed/wood3/400/600',
+      'https://picsum.photos/seed/wood4/600/600'
+    ]
+  },
+  '4': {
+    name: 'Meera Ben',
+    craft: 'Ajrakh Block Printing',
+    location: 'Kutch, Gujarat',
+    rating: 5.0,
+    reviews: 210,
+    experience: '40 Years',
+    profileImg: 'https://picsum.photos/seed/meera/400/400',
+    coverImg: 'https://picsum.photos/seed/block_print/1200/500',
+    bio: 'Ajrakh is not just printing; it is a 16-step process of washing, dyeing, and stamping that takes days to complete. Using only natural dyes like madder and indigo, I invite you to experience the true colors of Gujarat.',
+    gallery: [
+      'https://picsum.photos/seed/block1/600/600',
+      'https://picsum.photos/seed/block2/600/400',
+      'https://picsum.photos/seed/block3/400/600',
+      'https://picsum.photos/seed/block4/600/600'
+    ]
+  },
+  'default': {
+    name: 'Artisan Not Found',
+    craft: 'Unknown Craft',
+    location: 'Unknown',
+    rating: 0,
+    reviews: 0,
+    experience: 'N/A',
+    profileImg: 'https://ui-avatars.com/api/?name=Not+Found',
+    coverImg: 'https://picsum.photos/seed/error/1200/500',
+    bio: 'Sorry, we could not find the details for this artisan.',
+    gallery: []
   }
 };
 
