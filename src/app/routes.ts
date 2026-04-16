@@ -7,7 +7,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ExplorePage from "./pages/ExplorePage";
 import  EventsPage  from "./pages/EventsPage";
-import { ArtisanProfilePage } from "./pages/ArtisanProfilePage";
+import  ArtisanProfilePage  from "./pages/ArtisanProfilePage";
 import { BookingPage } from "./pages/BookingPage";
 import { TicketPage } from "./pages/TicketPage";
 
