@@ -4,11 +4,13 @@ import Navbar from '../components/Navbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import { ArrowRight, MapPin, Star, Instagram, Twitter, Facebook } from 'lucide-react';
-
+import Footer from '../components/Footer';
 // Import Swiper styles
+// Swiper CSS
+// @ts-ignore
 import 'swiper/css';
+// @ts-ignore
 import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
 
 const SLIDES = [
   { id: 1, title: "Discover India's Soul", sub: "Connect with master artisans in their own workshops.", img: "https://picsum.photos/seed/slide1/1200/600" },
@@ -135,44 +137,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      {/* 5. FOOTER */}
-      <footer className="bg-gray-100 pt-20 pb-10 px-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-gray-200 pb-12 mb-8">
-          <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-full bg-orange-600 flex items-center justify-center"><ArrowRight className="w-4 h-4 text-white rotate-[-45deg]" /></div>
-              <span className="text-2xl font-serif font-bold">Swadeshi</span>
-            </div>
-            <p className="text-gray-500 text-sm leading-relaxed">Connecting travelers with the timeless heritage of Bharat through authentic artisan workshops and heritage stays.</p>
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 mb-6">Quick Links</h4>
-            <ul className="space-y-4 text-sm text-gray-600">
-              <li><Link to="/explore" className="hover:text-orange-600">Explore Artisans</Link></li>
-              <li><Link to="/homestays" className="hover:text-orange-600">Heritage Stays</Link></li>
-              <li><Link to="/events" className="hover:text-orange-600">Experiences</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 mb-6">Support</h4>
-            <ul className="space-y-4 text-sm text-gray-600">
-              <li><Link to="/contact" className="hover:text-orange-600">Contact Us</Link></li>
-              <li><Link to="/about" className="hover:text-orange-600">Privacy Policy</Link></li>
-              <li><Link to="/about" className="hover:text-orange-600">Terms of Service</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold text-gray-900 mb-6">Follow Our Journey</h4>
-            <div className="flex gap-4">
-              <a href="#" className="p-3 bg-white rounded-xl shadow-sm hover:text-orange-600 transition-colors"><Instagram /></a>
-              <a href="#" className="p-3 bg-white rounded-xl shadow-sm hover:text-orange-600 transition-colors"><Twitter /></a>
-              <a href="#" className="p-3 bg-white rounded-xl shadow-sm hover:text-orange-600 transition-colors"><Facebook /></a>
-            </div>
-          </div>
-        </div>
-        <p className="text-center text-gray-400 text-sm">© 2026 Swadeshi. Built by Team Avengers.</p>
-      </footer>
+      <Footer />
     </div>
   );
 };

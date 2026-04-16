@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import { Calendar, MapPin, ArrowRight, Sparkles, PaintRoller } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import Footer from '../components/Footer';
 // Data for Large Festivals
 const UPCOMING_FESTIVALS = [
   { id: 1, title: 'Jaipur Literature Festival', date: 'Jan 28 - Feb 1, 2027', location: 'Diggi Palace, Jaipur', image: 'https://picsum.photos/seed/jlf/800/500', type: 'Cultural Fest' },
@@ -121,7 +121,7 @@ const EventsPage = () => {
           </div>
         </div>
       </section>
-
+      <Footer />
     </div>
   );
 };

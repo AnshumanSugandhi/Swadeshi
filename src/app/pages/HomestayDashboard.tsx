@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import { IndianRupee, Users, CalendarDays, CheckCircle, Clock, Home, MapPin } from 'lucide-react';
 import { useAuth } from '../components/AuthContext';
 import { Navigate } from 'react-router-dom';
-
+import Footer from '../components/Footer';
 // Dummy Bookings Data for Homestays
 const RECENT_BOOKINGS = [
   { id: 'HS-9012', name: 'Vikram Singh', checkIn: 'May 10, 2026', checkOut: 'May 12, 2026', guests: 2, amount: 4500, status: 'confirmed', room: 'Heritage Suite' },
@@ -120,6 +120,7 @@ const HomestayDashboard = () => {
         </div>
 
       </div>
+      <Footer />
     </div>
   );
 };

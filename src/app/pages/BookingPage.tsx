@@ -5,7 +5,7 @@ import { Calendar, Clock, Users, ShieldCheck, CheckCircle } from 'lucide-react';
 import { useAuth } from '../components/AuthContext';
 import { db } from '../../firebase'; // Adjust path if needed
 import { collection, addDoc } from 'firebase/firestore';
-
+import Footer from '../components/Footer';
 export const BookingPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -48,7 +48,7 @@ export const BookingPage = () => {
           status: 'confirmed',
           createdAt: new Date().toISOString()
         });
-
+        
         // 3. REDIRECT TO TICKET PAGE
         setTimeout(() => {
           navigate(`/ticket/${docRef.id}`);
@@ -136,6 +136,7 @@ export const BookingPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

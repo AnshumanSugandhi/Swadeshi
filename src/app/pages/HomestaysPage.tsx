@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import { Search, MapPin, Filter, Star, Coffee, Wifi, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import Footer from '../components/Footer';
 const MOCK_HOMESTAYS = [
   { id: 'hs1', name: 'Royal Rajputana Haveli', type: 'Heritage Home', state: 'Rajasthan', rating: 4.9, price: 2500, image: 'https://picsum.photos/seed/haveli/800/600', amenities: ['Breakfast', 'Wifi'] },
   { id: 'hs2', name: 'Kerala Backwater Retreat', type: 'Eco Villa', state: 'Kerala', rating: 4.8, price: 3200, image: 'https://picsum.photos/seed/kerala/800/600', amenities: ['Breakfast', 'Lake View'] },
@@ -57,6 +57,7 @@ const HomestaysPage = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

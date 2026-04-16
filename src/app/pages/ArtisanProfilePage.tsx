@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { MapPin, Star, Award, Calendar, ChevronRight, ShieldCheck } from 'lucide-react';
-
+import Footer from '../components/Footer';
 const MOCK_ARTISANS = {
   '1': {
     name: 'Ramesh Kumar',
@@ -70,6 +70,40 @@ const MOCK_ARTISANS = {
       'https://picsum.photos/seed/block2/600/400',
       'https://picsum.photos/seed/block3/400/600',
       'https://picsum.photos/seed/block4/600/600'
+    ]
+  },
+  '5': {
+    name: 'Harish Nair',
+    craft: 'Bronze Casting',
+    location: 'Thrissur, Kerala',
+    rating: 4.9,
+    reviews: 82,
+    experience: '22 Years',
+    profileImg: 'https://picsum.photos/seed/harish_profile/400/400',
+    coverImg: 'https://picsum.photos/seed/bronze_cover/1200/500',
+    bio: 'Hailing from the traditional bell-metal artisan community of Kerala, I craft intricate bronze idols and lamps using the ancient "lost-wax" casting technique (Cire Perdue). Each piece takes weeks to perfect, echoing the spiritual heritage of God\'s Own Country.',
+    gallery: [
+      'https://picsum.photos/seed/bronze1/600/600',
+      'https://picsum.photos/seed/bronze2/600/400',
+      'https://picsum.photos/seed/bronze3/400/600',
+      'https://picsum.photos/seed/bronze4/600/600'
+    ]
+  },
+  '6': {
+    name: 'Fatima Begum',
+    craft: 'Pashmina Weaving',
+    location: 'Srinagar, Kashmir',
+    rating: 5.0,
+    reviews: 145,
+    experience: '30 Years',
+    profileImg: 'https://picsum.photos/seed/fatima_profile/400/400',
+    coverImg: 'https://picsum.photos/seed/kashmir_cover/1200/500',
+    bio: 'My hands have spun the finest Changthangi goat wool into feather-light Pashmina shawls for three decades. Working from my wooden loom overlooking the Dal Lake, I weave traditional Sozni embroidery patterns that tell the stories of the Kashmir valley.',
+    gallery: [
+      'https://picsum.photos/seed/pashmina1/600/600',
+      'https://picsum.photos/seed/pashmina2/600/400',
+      'https://picsum.photos/seed/pashmina3/400/600',
+      'https://picsum.photos/seed/pashmina4/600/600'
     ]
   },
   'default': {
@@ -177,7 +211,9 @@ const ArtisanProfilePage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
+    
   );
 };
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
-
+import Footer from '../components/Footer';
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
 
@@ -80,6 +80,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

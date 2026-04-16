@@ -4,7 +4,7 @@ import { ImpactBar } from "../components/ImpactBar";
 import { CraftCategories } from "../components/CraftCategories";
 import { FeaturedArtisans } from "../components/FeaturedArtisans";
 import { DigitalPassport } from "../components/DigitalPassport";
-import { Footer } from "../components/Footer";
+// import { Footer } from "../components/Footer";
 
 export function LandingPage() {
   return (
@@ -15,7 +15,7 @@ export function LandingPage() {
       <CraftCategories />
       <FeaturedArtisans />
       <DigitalPassport />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
