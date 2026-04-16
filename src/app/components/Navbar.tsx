@@ -44,7 +44,7 @@ export default function Navbar() {
               About Us
             </Link>
             <Link to="/events" className={`text-sm font-bold transition-colors ${isActive('/events') ? 'text-orange-600' : 'text-gray-600 hover:text-orange-600'}`}>
-              Experiences
+              Upcoming Events
             </Link>
             <Link to="/explore" className={`text-sm font-bold transition-colors ${isActive('/explore') ? 'text-orange-600' : 'text-gray-600 hover:text-orange-600'}`}>
               Artisans
